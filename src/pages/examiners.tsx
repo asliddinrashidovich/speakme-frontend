@@ -58,6 +58,18 @@ export const Examiners = () => {
       rating: 4.7,
       mockExamsCount: 45,
       telegramUsername: 'alisher_ielts'
+    },
+    {
+      uid: '5',
+      firstName: 'Asliddin',
+      lastName: 'Norboyev',
+      bio: 'Mahalliy talabalarga IELTS sirlarini o\'rgataman. Band 8.0 sohibiman.',
+      ieltsOverall: 8.0,
+      price: 100000,
+      photoURL: 'https://avatars.githubusercontent.com/u/157356679?v=4',
+      rating: 4.7,
+      mockExamsCount: 45,
+      telegramUsername: 'alisher_ielts'
     }
   ];
 
@@ -67,11 +79,10 @@ export const Examiners = () => {
   );
 
   return (
-    <div className="container mx-auto px-4 py-12 space-y-8">
+    <div className="container mx-auto px-4 md:px-10 py-12 space-y-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold">{t('nav.findExaminer')}</h1>
-          <p className="text-muted-foreground">{filteredExaminers.length} {t('examiners.results')}</p>
         </div>
         <div className="flex w-full md:w-auto gap-2">
           <div className="relative flex-1 md:w-80">
@@ -83,18 +94,11 @@ export const Examiners = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <Button variant="outline"><SlidersHorizontal className="h-4 w-4 mr-2" /> Filters</Button>
+          {/* <Button variant="outline"><SlidersHorizontal className="h-4 w-4 mr-2" /> Filters</Button> */}
         </div>
       </div>
 
-      <div className="flex gap-2 flex-wrap">
-        <Badge variant="secondary" className="cursor-pointer hover:bg-primary hover:text-primary-foreground">All Scores</Badge>
-        <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground">Score 8.0+</Badge>
-        <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground">Score 7.0 - 7.5</Badge>
-        <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground">Price: Low to High</Badge>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {filteredExaminers.map((examiner) => (
           // @ts-ignore
           <ExaminerCard key={examiner.uid} examiner={examiner} />

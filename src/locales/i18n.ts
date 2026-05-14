@@ -7,8 +7,8 @@ const resources = {
       nav: {
         findExaminer: "Find an Examiner",
         becomeExaminer: "Become an Examiner",
-        login: "Login",
-        register: "Register",
+        login: "Log In",
+        register: "Sign Up",
         profile: "Profile"
       },
       hero: {
@@ -16,6 +16,18 @@ const resources = {
         subtitle: "Improve your IELTS Speaking score with top instructors.",
         findButton: "Find an Examiner",
         becomeButton: "Become an Examiner"
+      },
+      about: {
+        subtitle: "How it works",
+        title: "Master the Art of Speaking",
+        sectionTitle: "About Speak Pro",
+        description: "Speak Pro is more than just a platform; it's your personal speaking coach. We connect ambitious students with certified examiners to bridge the gap between preparation and perfection. Whether you're aiming for a Band 7 or a Band 9, we provide the real-world practice you need to succeed.",
+        feature1: "Real-time Feedback",
+        feature1Desc: "Get instant, detailed evaluation based on official IELTS criteria.",
+        feature2: "Certified Experts",
+        feature2Desc: "All our examiners undergo rigorous verification and have Band 7+ scores.",
+        feature3: "Flexible Scheduling",
+        feature3Desc: "Book sessions that fit your busy lifestyle, 24/7."
       },
       stats: {
         reliable: "Reliable",
@@ -30,7 +42,8 @@ const resources = {
       results: {
         experts: "Experts",
         mockExams: "Mock Exams",
-        averageScore: "Average Score"
+        averageScore: "Average Score",
+        sectionTitle: "Our Impact in Numbers"
       },
       examiners: {
         title: "Our Examiners",
@@ -42,7 +55,9 @@ const resources = {
         ieltsResult: "IELTS Score",
         price: "Price",
         age: "Age",
-        telegram: "Telegram"
+        telegram: "Telegram",
+        moneyBack: "Money back guarantee",
+        topExpert: "Top Expert"
       },
       faq: {
         title: "Frequently Asked Questions"
@@ -56,11 +71,25 @@ const resources = {
         send: "Send Message"
       },
       auth: {
-        loginTitle: "Log In",
-        registerTitle: "Register",
+        loginTitle: "Log In for Students",
+        loginSubtitle: "Sign in to continue your IELTS journey",
+        registerTitle: "Sign Up for Students",
+        registerSubtitle: "Join Speak Pro to start your preparation",
+        orExpertLogin: "or Log In as an Expert",
+        orExpertRegister: "or Sign Up as an Expert",
+        fullName: "Full Name",
+        phoneNumber: "Phone Number",
         googleLogin: "Continue with Google",
-        phoneLogin: "Login by Phone",
-        emailLogin: "Login by Email"
+        emailLogin: "Log in with Email",
+        emailRegister: "Sign up with Email",
+        phoneLogin: "Log in with Phone",
+        alreadyHaveAccount: "Already have an account? Log In",
+        noAccount: "Don't have an account? Sign Up",
+        terms: "By creating an account, you agree to our Terms of Service.",
+        verificationTitle: "Verification Code",
+        resendCode: "Resend Code",
+        isExpert: "Log In as Expert",
+        isStudent: "Log In as Student"
       },
       profile: {
         title: "Your Profile",
@@ -84,6 +113,18 @@ const resources = {
         findButton: "Examinerni topish",
         becomeButton: "Examiner bo'lish"
       },
+      about: {
+        subtitle: "Bu qanday ishlaydi",
+        title: "Nutq san'atini egallang",
+        sectionTitle: "Speak Pro haqida",
+        description: "Speak Pro shunchaki platforma emas; bu sizning shaxsiy speaking murabbiyingizdir. Biz maqsadli talabalarni sertifikatlangan imtihonchilar bilan bog'laymiz, bu esa tayyorgarlik va mukammallik o'rtasidagi tafovutni yo'qotadi. Band 7 yoki Band 9 gachami, biz muvaffaqiyatga erishishingiz uchun kerakli bo'lgan real amaliyotni taqdim etamiz.",
+        feature1: "Real-vaqtda fikr-mulohazalar",
+        feature1Desc: "Rasmiy IELTS mezonlari asosida tezkor va batafsil baholashni oling.",
+        feature2: "Sertifikatlangan ekspertlar",
+        feature2Desc: "Barcha imtihonchilarimiz qattiq tekshiruvdan o'tgan va Band 7+ ballariga ega.",
+        feature3: "Moslashuvchan jadval",
+        feature3Desc: "O'zingizga qulay vaqtda, 24/7 sessiyalarni band qiling."
+      },
       stats: {
         reliable: "Ishonchli",
         reliableText: "Dunyo bo'ylab minglab talabalar tomonidan ishonilgan.",
@@ -97,7 +138,8 @@ const resources = {
       results: {
         experts: "Ekspertlar",
         mockExams: "Mock imtihonlar",
-        averageScore: "O'rtacha ball"
+        averageScore: "O'rtacha ball",
+        sectionTitle: "Bizning natijalar"
       },
       examiners: {
         title: "Bizning Examinerlar",
@@ -109,7 +151,9 @@ const resources = {
         ieltsResult: "IELTS ball",
         price: "Narxi",
         age: "Yoshi",
-        telegram: "Telegram"
+        telegram: "Telegram",
+        moneyBack: "Pulni qaytarish kafolati",
+        topExpert: "Top Ekspert"
       },
       faq: {
         title: "Ko'p so'raladigan savollar"
@@ -123,11 +167,25 @@ const resources = {
         send: "Xabar yuborish"
       },
       auth: {
-        loginTitle: "Kirish",
-        registerTitle: "Ro'yxatdan o'tish",
-        googleLogin: "Google orqali kirish",
+        loginTitle: "Talabalar uchun kirish",
+        loginSubtitle: "IELTS sayohatingizni davom ettirish uchun kiring",
+        registerTitle: "Talaba sifatida ro'yxatdan o'tish",
+        registerSubtitle: "Tayyorgarlikni boshlash uchun Speak Pro-ga qo'shiling",
+        orExpertLogin: "yoki Ekspert sifatida kirish",
+        orExpertRegister: "yoki Ekspert sifatida ro'yxatdan o'tish",
+        fullName: "Ism va familiya",
+        phoneNumber: "Telefon raqami",
+        googleLogin: "Google orqali davom etish",
+        emailLogin: "Email bilan kirish",
+        emailRegister: "Email orqali ro'yxatdan o'tish",
         phoneLogin: "Telefon orqali kirish",
-        emailLogin: "Email orqali kirish"
+        alreadyHaveAccount: "Ro'yxatdan o'tganmisiz? Kirish",
+        noAccount: "Ro'yxatdan o'tmaganmisiz? Ro'yxatdan o'tish",
+        terms: "Akkaunt yaratish orqali jamoat taklifiga rozilik bildirasiz.",
+        verificationTitle: "Tasdiqlash kodi",
+        resendCode: "Kodni qayta yuborish",
+        isExpert: "Ekspert sifatida kirish",
+        isStudent: "Talaba sifatida kirish"
       },
       profile: {
         title: "Sizning profilingiz",
